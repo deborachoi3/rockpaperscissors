@@ -6,7 +6,7 @@ In this unit, coders will create a Rock, Paper, Scissors game. The Rock, Paper, 
 ## Day 1
 
 #### Planning
-- [ ] Complete the project planning document.
+- [x] Complete the project planning document.
 #### Set-Up
 - [x] Go to the repository at https://github.com/itscodenation/rockpaperscissors
 - [ ] Fork this repository to your Github account and pull it down to Gitpod
