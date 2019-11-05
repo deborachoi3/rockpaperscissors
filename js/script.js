@@ -4,32 +4,34 @@
 
 //GLOBAL VARIABLES
 /* global $ */
-console.log("hi")
 $("#shoot").click(function(){
     let input = $("#input").val();
      let r = Math.random()
+     let computerChoice = '';
+     console.log(r)
         if(r < 0.33){
-            let computerChoice = "rock"
+            computerChoice += "rock"
+
         }
         else if (r < 0.67){
-            let computerChoice = "paper"
+            computerChoice += "paper"
         }
         else{
-            let computerChoice = "scissors"
+            computerChoice += "scissors"
         }
-
+ console.log(computerChoice);
+let userInput = "hello";
 $("#userChoice").text(input)
-$("#computerChoice").text("hi")
- /*console.log(userInput);
-    if (userInput == "rock") && (r < 0.99) || (userInput == "paper") && (r < 0.33) || (userInput == "scissors") && (r < 0.66) {
-        $("#text").html("User wins!");
+$("#computerChoice").text(computerChoice)
+    if ((((userInput == "rock") && (computerChoice == "scissors")) || ((userInput == "paper") && (computerChoice == "rock")) || ((userInput == "scissors") && (computerChoice == "paper")))) {
+        $("#result").html("User wins!");
     }
-    else if (userInput == "rock" && r < 0.67) || (userInput == "paper") && (r < 0.99) || (userInput == "scisssors") && (r < 0.33){
-        $("#text").html("Computer wins");
+    else if((((userInput == "scissor") && (computerChoice == "rock")) || ((userInput == "rock") && (computerChoice == "paper")) || ((userInput == "paper") && (computerChoice == "scissors")))){
+        $("#result").html("Computer wins!");
     }
-    else if (userInput = "rock" && r < 0.33){
-       $("#text").html("It's a tie");
-    }*/
+    else {
+       $("#result").html("It's a tie!");
+    }
 });
 
 
